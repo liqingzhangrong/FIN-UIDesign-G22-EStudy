@@ -5,18 +5,22 @@ import './App.css';
 import {Switch, Route, Redirect} from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import RightSidebar from './components/right-side-bar/index'
-
+import Login from './views/login/index'
 const {Content } = Layout;
 function App() {
 
   return(
     <>
-    <Layout style={{backgroundColor: 'white'}}>
+    <Switch>
+    <Route exact path='/login' component={Login}/>
+              <Redirect from= '/' to="/login"/>
+    </Switch>
+    {/* <Layout style={{backgroundColor: 'white'}}>
         <Sidebar />
         <Layout style={{backgroundColor: 'white'}}>
           <Content>
             <Switch>
-              <Route exact path='/login' component=""/>
+              <Route exact path='/login' component={Login}/>
               <Redirect from= '/' to="/login"/>
             </Switch>
           </Content>
@@ -25,7 +29,7 @@ function App() {
         <RightSidebar>
           
         </RightSidebar>
-    </Layout>
+    </Layout> */}
     </>
   )
 }

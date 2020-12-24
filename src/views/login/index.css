@@ -1,0 +1,79 @@
+.limiter {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+}
+.content-container {
+  background-color: #e3f7ff;
+  width: 60%;
+  margin-top: 10%;
+  border-width: 1px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px;
+  margin-bottom: 10%;
+}
+.logo-content {
+  padding-left: 40px;
+}
+.logo-content .header {
+  padding-top: 20px;
+}
+.logo-content .body {
+  display: flex;
+  justify-content: center;
+}
+.login-form {
+  background-color: white;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 0px;
+  border-color: white;
+  justify-content: center;
+  padding-top: 40px;
+  /* box-shadow: 1px 1px 2px; */
+}
+.login-form .header {
+  display: flex;
+  justify-content: center;
+}
+.login-form .body {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.login-form .footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.login-form .footer .recover {
+  font-weight: bold;
+  color: #0052cc;
+}
+.login-form .footer .recover:hover {
+  color: #cc00cc;
+  text-decoration: underline;
+}
+.btnItem {
+  border-radius: 20px;
+  align-self: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  background-color: #0052CC;
+  width: 120px;
+  height: 45px;
+}
+.input-field {
+  width: 400;
+  height: 50;
+  border-radius: 12px;
+}
+.input-checkbox {
+  margin-left: 10px;
+}
+.ant-checkbox .ant-checkbox-inner {
+  background-color:#C4C4C4;
+  border-color:#C4C4C4;
+}
