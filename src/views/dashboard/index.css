@@ -1,0 +1,8 @@
+.deadline-card {
+  cursor: pointer;
+  transition-duration: 200ms;
+}
+
+.deadline-card:hover {
+  transform: scale(1.05);
+}
