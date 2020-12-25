@@ -7,10 +7,11 @@ const { Title, Paragraph } = Typography;
 
 const UpcomingTaskLarge = (props) =>
 {
+    const background = props.type === 'web' ? "#EAFDEC" : "#FFF5EB";
     return (
-        <Row className="upcoming-task-large" style={{ marginBottom: '17px', backgroundColor: '#E3F7FF', borderRadius: '20px' }} align='middle' justify="center">
+        <Row className="upcoming-task-large" style={{ marginBottom: '17px', backgroundColor: background, borderRadius: '20px' }} align='middle' justify="center">
             <Col style={{ marginLeft: '-25px' }}>
-                <Image src="/web-icon-medium.svg" />
+                <Image src={"/" + props.type + "-icon-medium.svg"} />
             </Col>
             <Col style={{ marginTop: '15px' }}>
                 <Title style={{ fontSize: '18px' }}>{props.title}</Title>

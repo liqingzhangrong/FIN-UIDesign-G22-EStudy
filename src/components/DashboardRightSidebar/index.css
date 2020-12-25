@@ -1,0 +1,9 @@
+.event-card {
+  cursor: pointer;
+  border-radius: 20px;
+  transition-duration: 200ms;
+}
+.event-card:hover {
+  transform: scale(1.05);
+  transition-duration: 200ms;
+}

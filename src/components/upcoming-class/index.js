@@ -12,11 +12,14 @@ const UpcomingClass = (props) =>
                     <Image src={'/' + props.type + '-icon-small.svg'} />
                     <Col className="class-list-item-col" style={{ marginLeft: '45px' }}>
                         <Title style={{ fontSize: '18px', marginTop: '10px' }}>{props.title}</Title>
-                        <Paragraph>{props.room}&#9;&#9;{props.time}</Paragraph>
+                        <Row>
+                            <Paragraph style={{ fontSize: '16px', marginRight: '45px' }}>{props.time}</Paragraph>
+                            <Paragraph style={{ fontSize: '16px' }}>{props.room}</Paragraph>
+                        </Row>
                     </Col>
                 </Row>
             </Col>
-            <Col>
+            <Col style={{ marginRight: '45px' }}>
                 <Image src='/right-arrow.svg' />
             </Col>
         </Row>
