@@ -65,7 +65,7 @@ function Sidebar(props)
       <Sider className="sidebar" collapsible collapsed={collapsed} theme="light" width="15vw" onCollapse={onCollapse} style={{ minHeight: '100vh' }}>
         <Menu inlineIndent={24} onOpenChange={onOpenKeysChanged} className='sidebar-menu' theme="light" openKeys={openKeys} defaultOpenKeys={openKeys} defaultSelectedKeys={['1']} mode="inline">
           <Link to='/'>
-            <img id="sidebar-logo" style={{ display: 'block', margin: 'auto', marginBottom: "32px", marginTop: '20px', transitionDuration: '200ms' }} src="logo.svg" alt="logo" />
+            <img id="sidebar-logo" style={{ display: 'block', margin: 'auto', marginBottom: "32px", marginTop: '20px', transitionDuration: '200ms' }} src="/logo.svg" alt="logo" />
           </Link>
           <Menu.SubMenu key="sub1" title="Công việc" icon={collapsed ? <HomeOutlined className="sidebar-icons" style={{ marginRight: "30px", fontSize: '16px' }} /> : ""}>
             <Menu.Item className='sidebar-item' key="1" onClick={() => { history.push('/dashboard') }} style={{ height: "50px", fontSize: '16px', margin: '15px 0px' }} icon={<HomeOutlined className="sidebar-icons" style={{ marginRight: "30px", fontSize: '16px' }} />}>

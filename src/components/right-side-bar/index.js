@@ -11,7 +11,7 @@ function RightSidebar(props)
   return (
     <div style={{ minHeight: '100vh', borderLeft: '0.5px solid #f0f0f0', width: '27vw' }}>
       <CustomHeader />
-      <Scrollbars >
+      <Scrollbars autoHide autoHideTimeout={0} >
         {props.children}
       </Scrollbars>
     </div>

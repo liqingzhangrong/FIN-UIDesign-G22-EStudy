@@ -1,7 +1,8 @@
-import React from "react";
-import { Row, Col, Typography, Input, Form, Checkbox, Button, Image, Tag, Card, Progress, Space } from "antd";
 import { SearchOutlined } from '@ant-design/icons';
+import { Button, Card, Col, Image, Input, Progress, Row, Tag, Typography } from "antd";
+import React from "react";
 import "./index.css";
+import { history } from '../../history'
 
 const Courses = () =>
 {
@@ -63,7 +64,7 @@ const Courses = () =>
                 </Row>
                 <Row style={{ marginTop: '30px' }} gutter={30} justify="center" align="middle">
                     <Col span={8} >
-                        <Card className="card-1" style={{}}>
+                        <Card className="card-1" style={{}} onClick={() => { history.push('/courses/web') }}>
                             <Image className="image-1" src="/course_img_4.svg" style={{ width: 230 }} />
                             <Typography className="title">Phát triển Web</Typography>
                             <Row className="tag-box">
