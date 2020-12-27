@@ -1,23 +1,25 @@
 .limiter {
   display: flex;
   width: 100%;
-  margin: 0 auto;
   justify-content: center;
+  padding-bottom: 100px;
 }
 .content-container {
   background-color: #e3f7ff;
-  width: 60%;
-  margin-top: 10%;
+  width: 1089px;
+  height: 592px;
+  margin-top: 100px;
   border-width: 1px;
   border-radius: 20px;
-  box-shadow: 1px 1px 5px;
-  margin-bottom: 10%;
+  box-shadow:  4px 4px 0px rgba(0,0,0,0.25);
 }
 .logo-content {
   padding-left: 40px;
 }
 .logo-content .header {
-  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .logo-content .body {
   display: flex;
@@ -28,19 +30,20 @@
   border-radius: 20px;
   border-style: solid;
   border-width: 0px;
+  height: 592px;
   border-color: white;
   justify-content: center;
-  padding-top: 40px;
   /* box-shadow: 1px 1px 2px; */
 }
 .login-form .header {
   display: flex;
   justify-content: center;
+  margin-top: 95px;
 }
 .login-form .body {
   display: flex;
   justify-content: center;
-  padding-top: 20px;
+  margin-top: 45px;
 }
 .login-form .footer {
   display: flex;
@@ -59,19 +62,24 @@
 .btnItem {
   border-radius: 20px;
   align-self: center;
-  margin-left: 25%;
-  margin-right: 25%;
   background-color: #0052CC;
   width: 120px;
-  height: 45px;
+  height: 42px;
 }
+
+.row-mid {
+  display: flex;
+  justify-content: center;
+}
+
 .input-field {
-  width: 400;
-  height: 50;
-  border-radius: 12px;
+  width: 400px;
+  height: 42px; 
+  font-size: 16pxpx;
+  border-radius: 20px;
 }
 .input-checkbox {
-  margin-left: 10px;
+  margin-left: 23px;
 }
 .ant-checkbox .ant-checkbox-inner {
   background-color:#C4C4C4;
