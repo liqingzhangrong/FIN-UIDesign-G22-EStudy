@@ -1,6 +1,7 @@
 import React from 'react';
 import { Row, Col, Typography, Input, Form, Checkbox, Button, Image, Tag, Card, Progress, Space } from "antd";
 import './index.css';
+import { history } from '../../history'
 
 const CourseRightSideBar = () => {
     return (
@@ -60,7 +61,7 @@ const CourseRightSideBar = () => {
                 </Row>
             </Col>
             <Typography className="side-title" style={{marginTop: '30px', marginBottom: '30px'}}>Công việc</Typography>
-            <Card className="side-card-1" bodyStyle={{padding: "0"}}>
+            <Card hoverable onClick={() => { history.push('/classname/classwork') }} className="side-card-1" bodyStyle={{padding: "0"}}>
                 <Row style={{height: '100%'}}>
                     <Image className="img" src="/course_img_4.svg"/>
                     <Col style={{marginTop: '40px', marginLeft: '35px'}}>
@@ -70,12 +71,12 @@ const CourseRightSideBar = () => {
                 </Row>
             </Card>
             <Row style={{marginTop: '17px'}}>
-                <Card className="side-card-2" bodyStyle={{padding: "0", alignItems: 'center', justifyContent: 'center'}} style={{marginRight: '9px', background: '#FFF5EB'}}>
+                <Card hoverable onClick={() => { history.push('/classname/classwork') }} className="side-card-2" bodyStyle={{padding: "0", alignItems: 'center', justifyContent: 'center'}} style={{marginRight: '9px', background: '#FFF5EB'}}>
                     <Image className="img" src="/course_img_4.svg"/>
                     <Typography className="text-1">Bài tập App 1</Typography>
                     <Typography className="text-2">7 giờ 43 phút</Typography>
                 </Card>
-                <Card className="side-card-2" bodyStyle={{padding: "0"}} style={{marginLeft: '9px', background: '#EAFDEC'}}>
+                <Card hoverable onClick={() => { history.push('/classname/classwork') }} className="side-card-2" bodyStyle={{padding: "0"}} style={{marginLeft: '9px', background: '#EAFDEC'}}>
                     <Image className="img" src="/course_img_4.svg"/>
                     <Typography className="text-1">Bài tập nhóm 1</Typography>
                     <Typography className="text-2">7 giờ 43 phút</Typography>
