@@ -23,23 +23,23 @@ const Courses = () =>
             </Row>
             <Col className="semi-title">
                 <Typography className="title-semi">Thông báo</Typography>
-                <Row style={{ marginTop: '30px' }} gutter={30}>
+                <Row style={{ marginTop: '30px' }} gutter={30} justify="center">
                     <Col span={8}>
-                        <Card className="card" style={{ background: '#E3F7FF' }}>
+                        <Card className="card-noti" style={{ background: '#E3F7FF' }}>
                             <Image src="/web-icon-small.svg" />
                             <Typography className="title">Thông báo 1</Typography>
                             <Typography className="text">Lorem ipsum dolor sit amet, consectetur adipiscing</Typography>
                         </Card>
                     </Col>
                     <Col span={8}>
-                        <Card className="card" style={{ background: '#FFF4EB' }}>
+                        <Card className="card-noti" style={{ background: '#FFF4EB' }}>
                             <Image src="/app-icon-small.svg" />
                             <Typography className="title">Thông báo 2</Typography>
                             <Typography className="text">Lorem ipsum dolor sit amet, consectetur adipiscing</Typography>
                         </Card>
                     </Col>
                     <Col span={8}>
-                        <Card className="card" style={{ background: '#EAFDEC' }}>
+                        <Card className="card-noti" style={{ background: '#EAFDEC' }}>
                             <Image src="/physics-icon-small.svg" />
                             <Typography className="title">Thông báo 3</Typography>
                             <Typography className="text">Lorem ipsum dolor sit amet, consectetur adipiscing</Typography>
@@ -48,18 +48,21 @@ const Courses = () =>
                 </Row>
             </Col>
             <Col className="semi-title">
-                <Row style={{ width: '100%' }} justify="space-between">
+                <Row style={{ width: '100%' }} justify="space-between" align="middle">
                     <Col>
                         <Typography className="title-semi">Đã đăng ký</Typography>
                     </Col>
-                    <Row>
-                        <Col>
-                            <Input style={{ borderRadius: '20px', width: '225px', marginRight: '15px', marginLeft: '430px' }} prefix={<SearchOutlined style={{ marginRight: '10px' }} />} placeholder='Tìm kiếm' />
-                        </Col>
-                        <Col>
-                            <Button style={{ background: '#f6f6f6', borderRadius: '20px', border: 'none' }}>Tên tăng dần</Button>
-                        </Col>
-                    </Row>
+                    <Col>
+                        <Row justify="space-between" gutter={15} align="middle">
+                            <Col span={18}>
+                                <Input style={{ borderRadius: '20px', marginRight: '15px', height: '42px' }} prefix={<SearchOutlined style={{ marginRight: '10px' }} />} placeholder='Tìm kiếm' />
+                            </Col>
+                            <Col span={6}>
+                                <Button style={{ background: '#f6f6f6', borderRadius: '20px', border: 'none' }}>Tên tăng dần</Button>
+                            </Col>
+                        </Row>
+                    </Col>
+
 
                 </Row>
                 <Row style={{ marginTop: '30px' }} gutter={30} justify="center" align="middle">

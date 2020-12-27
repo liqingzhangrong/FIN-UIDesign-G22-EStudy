@@ -19,7 +19,7 @@ const UpcomingClass = (props) =>
                     </Col>
                 </Row>
             </Col>
-            <Col style={{ marginRight: '45px' }}>
+            <Col style={{ marginRight: props.location === 'dashboard' ? '45px' : "0" }}>
                 <Image src='/right-arrow.svg' />
             </Col>
         </Row>

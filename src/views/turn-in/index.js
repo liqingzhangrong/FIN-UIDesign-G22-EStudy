@@ -1,41 +1,50 @@
+import { Breadcrumb, Button, Card, Col, Image, Input, Row, Tag, Typography } from "antd";
+import { HomeFilled } from '@ant-design/icons'
 import React from "react";
-import { Row, Col, Typography, Input, Form, Checkbox, Button, Image, Tag, Card, Progress, Space } from "antd";
-import { SearchOutlined } from '@ant-design/icons';
 import "./index.css";
 
 const TurnIn = () =>
 {
     return (
-        <Col className="container">
-            <Row>
-                <Card className="card-Class">
-                    <Image className="image-Class" src="/course_img_4.svg" />
-                </Card>
-
-                <Col className="col-center-title">
-                    <Typography className="title">Phát triển web</Typography>
+        <Col className="container" style={{ marginTop: '0px', position: 'relative' }}>
+            <Row gutter={30}>
+                <Col>
+                    <Image src='/course-icon.svg' />
+                </Col>
+                <Col>
+                    <Typography.Title level={1} className="title">Phát triển Web</Typography.Title>
                     <Row className="tag-box">
-                        <Tag className="tag">
-                            <Typography className="text">
-                                Học kỳ 1
-                            </Typography>
-                        </Tag>
-                        <Tag className="tag">
+                        <Button className="tag">
                             <Typography className="text">
                                 2020
-                            </Typography>
-                        </Tag>
+                    </Typography>
+                        </Button>
+                        <Button className="tag">
+                            <Typography className="text">
+                                Học kỳ 1
+                    </Typography>
+                        </Button>
                     </Row>
                 </Col>
             </Row>
-            <Row className="row-center">
-                <Col className="col-left" >
+
+            <Breadcrumb separator=">" style={{ marginTop: '45px' }}>
+                <Breadcrumb.Item href="/dashboard">
+                    <HomeFilled />
+                </Breadcrumb.Item>
+                <Breadcrumb.Item href="/courses">Môn học</Breadcrumb.Item>
+                <Breadcrumb.Item href="/courses/web">Phát triển Web</Breadcrumb.Item>
+                <Breadcrumb.Item href="">Đồ án giữa kỳ</Breadcrumb.Item>
+            </Breadcrumb>
+
+            <Row className="row-center" justify="space-between" gutter={45}>
+                <Col span={4} className="col-left" >
                     <Image className="image-Avt" src="/avt-1.svg" />
                     <Typography className="user-name">Nguyễn Văn A</Typography>
                     <Typography className="classwork-upload-date">16:30</Typography>
                     <Image className="image-Test" src="/test.svg" />
                 </Col>
-                <Col className="col-center-work" span={16}>
+                <Col className="col-center-work" span={20}>
                     <Typography className="classwork-title">Đồ án giữa kỳ</Typography>
                     <Row className="tag-box">
                         <Tag className="tag-classwork">
@@ -79,7 +88,7 @@ const TurnIn = () =>
                             </Card>
                         </Col>
                     </Row>
-                    <Row style={{ marginTop: "30px" }}>
+                    <Row style={{ marginTop: "30px" }} gutter={15}>
                         <Col className="col-comment-left" style={{ marginLeft: "30px" }}>
                             <Image className="image-add-comment" src="/add-comment.svg" />
                         </Col>

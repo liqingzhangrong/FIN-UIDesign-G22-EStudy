@@ -25,7 +25,7 @@ function TheLayout()
                         <Switch>
                             <Route path="/courses/web/classwork" component={TurnIn} />
                             <Route exact path="/courses" component={Course} />
-                            <Route exact path="/" component={Dashboard} />
+                            <Redirect exact from="/" to="/dashboard" />
                             <Route exact path="/dashboard" component={Dashboard} />
                             <Route exact path="/courses/web" component={ClassroomDemo} />
                         </Switch>

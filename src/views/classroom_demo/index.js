@@ -88,11 +88,11 @@ const ClassroomDemo = () =>
                             <Typography className="title-semi">Bài viết</Typography>
                         </Col>
                         <Col>
-                            <Row>
-                                <Col>
-                                    <Input style={{ borderRadius: '20px', width: '225px', marginRight: '15px', marginLeft: '430px' }} prefix={<SearchOutlined style={{ marginRight: '10px' }} />} placeholder='Tìm kiếm' />
+                            <Row justify="space-between" style={{ marginTop: '30px' }} gutter={15} align="middle">
+                                <Col span={18}>
+                                    <Input style={{ borderRadius: '20px', marginRight: '15px', height: '42px' }} prefix={<SearchOutlined style={{ marginRight: '10px' }} />} placeholder='Tìm kiếm' />
                                 </Col>
-                                <Col>
+                                <Col span={6}>
                                     <Button style={{ background: '#f6f6f6', borderRadius: '20px', border: 'none' }}>Tên tăng dần</Button>
                                 </Col>
                             </Row>

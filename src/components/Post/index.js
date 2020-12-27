@@ -46,10 +46,10 @@ const Post = (props) =>
                         <Avatar size={40} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
                     </Col>
                     <Col span={20}>
-                        <Input style={{ borderRadius: '20px' }} placeholder="Viết bình luận" />
+                        <Input style={{ borderRadius: '20px', height: '42px' }} placeholder="Viết bình luận" />
                     </Col>
                     <Col span={2}>
-                        <Button style={{ borderRadius: '20px', backgroundColor: '#DFF2FC', border: 'none' }} icon={<SendOutlined />} />
+                        <Button className="submit-comment-button"><Image src="/Vector.svg" /></Button>
                     </Col>
                 </Row>
 

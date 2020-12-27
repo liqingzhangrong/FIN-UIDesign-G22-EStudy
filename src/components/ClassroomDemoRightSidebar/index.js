@@ -1,8 +1,6 @@
 import { Col, Row, Typography, Input, Button, Tabs, Divider, Image } from "antd";
 import React from 'react';
 import UpcomingTaskLarge from '../../components/upcoming-task-large/index';
-import UpcomingTaskSmall from '../../components/upcoming-task-small/index';
-import UpcomingClass from '../../components/upcoming-class/index';
 import { SearchOutlined } from '@ant-design/icons';
 import './index.css';
 
@@ -13,11 +11,11 @@ const ClassroomDemoRightSidebar = () =>
     return (
         <Col className="side-container" style={{ padding: '30px 50px 90px 50px' }}>
             <Typography className="side-title">Công việc</Typography>
-            <Row justify="space-between" style={{ marginTop: '30px' }} gutter={15}>
-                <Col span="18">
-                    <Input style={{ borderRadius: '20px', marginRight: '15px' }} prefix={<SearchOutlined style={{ marginRight: '10px' }} />} placeholder='Tìm kiếm' />
+            <Row justify="space-between" style={{ marginTop: '30px' }} gutter={15} align="middle">
+                <Col span={18}>
+                    <Input style={{ borderRadius: '20px', marginRight: '15px', height: '42px' }} prefix={<SearchOutlined style={{ marginRight: '10px' }} />} placeholder='Tìm kiếm' />
                 </Col>
-                <Col span="6">
+                <Col span={6}>
                     <Button style={{ background: '#f6f6f6', borderRadius: '20px', border: 'none' }}>Tên tăng dần</Button>
                 </Col>
             </Row>
