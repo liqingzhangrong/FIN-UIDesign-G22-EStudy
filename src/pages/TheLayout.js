@@ -20,17 +20,17 @@ function TheLayout()
                 <Layout style={{ backgroundColor: 'white' }}>
                     <Content>
                         <Switch>
-                            <Route path="/classname/classwork" component={TurnIn}/>
-                            <Route exact path="/courses" component={Course}/>
+                            <Route path="/courses/web/classwork" component={TurnIn} />
+                            <Route exact path="/courses" component={Course} />
                             <Route exact path="/" component={Dashboard} />
                         </Switch>
                     </Content>
                 </Layout>
                 <RightSidebar>
-                        <Switch>
-                            <Route path="/classname/classwork" component={TurnInRightSideBar}/>
-                            <Route exact path="/courses" component={CourseRightSideBar}/>
-                        </Switch>
+                    <Switch>
+                        <Route path="/classname/classwork" component={TurnInRightSideBar} />
+                        <Route exact path="/courses" component={CourseRightSideBar} />
+                    </Switch>
                 </RightSidebar>
             </Layout>
         </>
