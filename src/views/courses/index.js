@@ -1,56 +1,71 @@
-import React from "react";
-import { Row, Col, Typography, Input, Form, Checkbox, Button, Image, Tag, Card, Progress, Space } from "antd";
 import { SearchOutlined } from '@ant-design/icons';
+import { Button, Card, Col, Image, Input, Progress, Row, Tag, Typography } from "antd";
+import React from "react";
 import "./index.css";
+import { history } from '../../history'
 
-const Courses = () => {
+const Courses = () =>
+{
     return (
-        <Col className="container">
-            <Typography className="title">Môn học</Typography>
+        <Col className="container" style={{ marginTop: '0px' }}>
+            <Typography.Title level={1} className="title">Môn học</Typography.Title>
             <Row className="tag-box">
-                <Tag className="tag">
+                <Button className="tag">
                     <Typography className="text">
                         2020
                     </Typography>
-                </Tag>
-                <Tag className="tag">
+                </Button>
+                <Button className="tag">
                     <Typography className="text">
                         Học kỳ 1
                     </Typography>
-                </Tag>
+                </Button>
             </Row>
             <Col className="semi-title">
                 <Typography className="title-semi">Thông báo</Typography>
-                <Row style={{marginTop: '30px'}}>
-                    <Space size={30}>
-                        <Card hoverable className="card" style={{background: '#E3F7FF'}}>
-                            <Image className="image-1" src="/course_img_1.svg"/>
+                <Row style={{ marginTop: '30px' }} gutter={30}>
+                    <Col span={8}>
+                        <Card className="card" style={{ background: '#E3F7FF' }}>
+                            <Image src="/web-icon-small.svg" />
                             <Typography className="title">Thông báo 1</Typography>
                             <Typography className="text">Lorem ipsum dolor sit amet, consectetur adipiscing</Typography>
                         </Card>
-                        <Card hoverable className="card" style={{background: '#FFF4EB'}}>
-                            <Image className="image-1" src="/course_img_2.svg"/>
+                    </Col>
+                    <Col span={8}>
+                        <Card className="card" style={{ background: '#FFF4EB' }}>
+                            <Image src="/app-icon-small.svg" />
                             <Typography className="title">Thông báo 2</Typography>
                             <Typography className="text">Lorem ipsum dolor sit amet, consectetur adipiscing</Typography>
                         </Card>
-                        <Card hoverable className="card" style={{background: '#F7EFFF'}}>
-                            <Image className="image-1" src="/course_img_3.svg"/>
+                    </Col>
+                    <Col span={8}>
+                        <Card className="card" style={{ background: '#EAFDEC' }}>
+                            <Image src="/physics-icon-small.svg" />
                             <Typography className="title">Thông báo 3</Typography>
                             <Typography className="text">Lorem ipsum dolor sit amet, consectetur adipiscing</Typography>
                         </Card>
-                    </Space>
+                    </Col>
                 </Row>
             </Col>
             <Col className="semi-title">
-                <Row style={{width: '100%'}}>
-                    <Typography className="title-semi">Đã đăng ký</Typography>
-                    <Input style={{ borderRadius: '20px', width: '225px', marginRight: '15px', marginLeft: '430px'}} prefix={<SearchOutlined style={{ marginRight: '10px' }} />} placeholder='Tìm kiếm' />
-                    <Button style={{background: '#F6F6F6', borderRadius: '20px'}}>Tên tăng dần</Button>
+                <Row style={{ width: '100%' }} justify="space-between">
+                    <Col>
+                        <Typography className="title-semi">Đã đăng ký</Typography>
+                    </Col>
+                    <Row>
+                        <Col>
+                            <Input style={{ borderRadius: '20px', width: '225px', marginRight: '15px', marginLeft: '430px' }} prefix={<SearchOutlined style={{ marginRight: '10px' }} />} placeholder='Tìm kiếm' />
+                        </Col>
+                        <Col>
+                            <Button style={{ background: '#f6f6f6', borderRadius: '20px', border: 'none' }}>Tên tăng dần</Button>
+                        </Col>
+                    </Row>
+
                 </Row>
-                <Row style={{marginTop: '30px'}} vgutter={30}>
-                    <Space size={30}>
-                        <Card hoverable className="card-1" style={{}}>
-                            <Image className="image-1" src="/course_img_4.svg" style={{width: 230}}/>
+                <Row style={{ marginTop: '30px' }} gutter={30} justify="center" align="middle">
+                    <Col span={8} >
+                        <Card className="card-1" style={{}} onClick={() => { history.push('/courses/web') }}>
+                            <Image className="image-1" src="/course_img_4.svg" style={{ width: 230 }} />
                             <Typography className="title">Phát triển Web</Typography>
                             <Row className="tag-box">
                                 <Tag className="tag">
@@ -65,11 +80,13 @@ const Courses = () => {
                                 </Tag>
                             </Row>
                             <Row className="progress-box">
-                                <Progress percent={75} className="progress"/>
+                                <Progress percent={75} className="progress" />
                             </Row>
                         </Card>
-                        <Card hoverable className="card-1">
-                            <Image className="image-1" src="/course_img_5.svg" style={{width: 230}}/>
+                    </Col>
+                    <Col span={8} >
+                        <Card className="card-1">
+                            <Image className="image-1" src="/course_img_5.svg" style={{ width: 230 }} />
                             <Typography className="title">Phát triển App</Typography>
                             <Row className="tag-box">
                                 <Tag className="tag">
@@ -84,11 +101,13 @@ const Courses = () => {
                                 </Tag>
                             </Row>
                             <Row className="progress-box">
-                                <Progress percent={50} className="progress"/>
+                                <Progress percent={50} className="progress" />
                             </Row>
                         </Card>
-                        <Card hoverable className="card-1">
-                            <Image className="image-1" src="/course_img_6.svg" style={{width: 230}}/>
+                    </Col>
+                    <Col span={8} >
+                        <Card className="card-1">
+                            <Image className="image-1" src="/course_img_6.svg" style={{ width: 230 }} />
                             <Typography className="title">Vật lý 1</Typography>
                             <Row className="tag-box">
                                 <Tag className="tag">
@@ -103,10 +122,10 @@ const Courses = () => {
                                 </Tag>
                             </Row>
                             <Row className="progress-box">
-                                <Progress percent={22} className="progress"/>
+                                <Progress percent={22} className="progress" />
                             </Row>
                         </Card>
-                    </Space>
+                    </Col>
                 </Row>
             </Col>
         </Col>

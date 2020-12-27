@@ -1,0 +1,9 @@
+.upcoming-task-small {
+  cursor: pointer;
+  transition-duration: 200ms;
+}
+
+.upcoming-task-small:hover {
+  transform: scale(1.05);
+  transition-duration: 200ms;
+}

@@ -8,6 +8,9 @@ import Course from '../views/courses';
 import TurnIn from '../views/turn-in';
 import CourseRightSideBar from '../components/CourseRightSideBar';
 import TurnInRightSideBar from '../components/TurnInRightSideBar';
+import ClassroomDemo from '../views/classroom_demo';
+import DashboardRightSidebar from '../components/DashboardRightSidebar';
+import ClassroomDemoRightSidebar from '../components/ClassroomDemoRightSidebar';
 const { Content } = Layout;
 
 function TheLayout()
@@ -23,13 +26,17 @@ function TheLayout()
                             <Route path="/courses/web/classwork" component={TurnIn} />
                             <Route exact path="/courses" component={Course} />
                             <Route exact path="/" component={Dashboard} />
+                            <Route exact path="/dashboard" component={Dashboard} />
+                            <Route exact path="/courses/web" component={ClassroomDemo} />
                         </Switch>
                     </Content>
                 </Layout>
                 <RightSidebar>
                     <Switch>
-                        <Route path="/classname/classwork" component={TurnInRightSideBar} />
+                        <Route path="/courses/web/classwork" component={TurnInRightSideBar} />
                         <Route exact path="/courses" component={CourseRightSideBar} />
+                        <Route exact path="/dashboard" component={DashboardRightSidebar} />
+                        <Route exact path="/courses/web" component={ClassroomDemoRightSidebar} />
                     </Switch>
                 </RightSidebar>
             </Layout>

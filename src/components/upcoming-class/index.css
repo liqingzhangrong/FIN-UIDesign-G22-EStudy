@@ -1,0 +1,10 @@
+.class-list-item {
+  cursor: pointer;
+  border-radius: 20px;
+  transition-duration: 200ms;
+  margin-bottom: 35px;
+}
+.class-list-item:hover {
+  transform: scale(1.05);
+  transition-duration: 200ms;
+}
