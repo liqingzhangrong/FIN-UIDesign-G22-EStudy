@@ -1,8 +1,5 @@
 .container {
-  padding-top: 40px;
-  padding-left: 100px;
-  padding-right: 60px;
-  padding-bottom: 120px;
+  padding: 50px 50px;
 }
 
 .title {
@@ -62,21 +59,21 @@
   color: #000000;
 }
 
-.card {
+.card-noti {
+  width: 100%;
   border: none;
   cursor: pointer;
-  min-width: 280px;
   border-radius: 20px;
   transition-duration: 200ms;
 }
-.card:hover,
+.card-noti:hover,
 .card-1:hover {
   transition-duration: 200ms;
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
   transform: scale(1.05);
 }
 
-.card .title {
+.card-noti .title {
   margin-top: 15px;
 
   font-style: normal;
@@ -91,7 +88,7 @@
   color: #000000;
 }
 
-.card .text {
+.card-noti .text {
   margin-top: 15px;
 
   font-style: normal;

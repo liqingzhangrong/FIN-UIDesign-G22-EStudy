@@ -1,0 +1,247 @@
+::-webkit-input-placeholder {
+  text-align: center;
+}
+.side-container {
+  padding: 10px;
+  width: 100%;
+}
+
+.side-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+.side-card-box {
+  margin-top: 30px;
+}
+
+.side-card-box .button {
+  height: 80px;
+  margin-left: 20px;
+}
+
+.side-card {
+  width: 80px;
+  height: 80px;
+  background: #e3f7ff;
+  border-radius: 20px;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.side-card .img {
+  width: 80px;
+  height: 80px;
+}
+
+.content {
+  margin-left: 35px;
+  padding: 10px;
+}
+
+.content .title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+.side-card-box .text-1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+.side-card-box .text-2 {
+  margin-left: 60px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+.side-card-1 {
+  width: 398px;
+  height: 144px;
+
+  background: #e3f7ff;
+  border-radius: 20px;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.side-card-1 .img {
+  height: 130px;
+  width: 170px;
+}
+
+.side-card-1 .text-1 {
+  width: 100%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  color: #000000;
+}
+
+.side-card-1 .text-2 {
+  width: 100%;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
+
+.side-card-2 {
+  width: 190px;
+  height: 144px;
+
+  background: #e3f7ff;
+  border-radius: 20px;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.side-card-2 .img {
+  height: 55px;
+  width: 100%;
+}
+
+.side-card-2 .text-1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  color: #000000;
+  width: 100%;
+}
+
+.side-card-2 .text-2 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  color: #000000;
+  width: 100%;
+}
+
+.card-InputWork {
+  height: 300px;
+  border-radius: 20px;
+  margin-top: 10px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  outline: "none";
+  border: 1px solid #d9d9d9;
+}
+
+.card-note {
+  border-radius: 20px;
+  height: 100px;
+  margin-top: 30px;
+  border: 1px solid #d9d9d9;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.card-button {
+  border: none;
+  margin-top: 10px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.text-3 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  color: #6b6b6b;
+  width: 100%;
+}
+
+.text-4 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6b6b6b;
+  width: 100%;
+}
+
+.submit-classwork-button {
+  width: 126px;
+  height: 42px;
+  border-radius: 20px;
+}
+
+.confirm-Modal {
+  padding: 20px 0px;
+  width: 435px;
+  height: 230px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}

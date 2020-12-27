@@ -11,7 +11,7 @@ const { Title, Paragraph, Text } = Typography;
 const Dashboard = () =>
 {
     return (
-        <div style={{ padding: '50px 100px' }}>
+        <div style={{ padding: '50px 50px' }}>
             <Typography.Title level={1} style={{ marginBottom: '45px', fontWeight: '500' }}>Tổng quan</Typography.Title>
             <Row style={{ marginBottom: '45px' }} gutter={16}>
                 <Col span={12} >
@@ -33,9 +33,9 @@ const Dashboard = () =>
             <Row gutter={8} justify="space-between">
                 <Col span={12}>
                     <Title level={4} style={{ marginBottom: '30px', fontSize: '22px' }}>Sắp diễn ra</Title>
-                    <UpcomingClass type="web" title="Phát triển Web" time="12:30" room="E-303" />
-                    <UpcomingClass type="app" title="Phát triển App" time="12:30" room="E-303" />
-                    <UpcomingClass type="physics" title="Vật lý 1" time="12:30" room="E-303" />
+                    <UpcomingClass location="dashboard" type="web" title="Phát triển Web" time="12:30" room="E-303" />
+                    <UpcomingClass location="dashboard" type="app" title="Phát triển App" time="12:30" room="E-303" />
+                    <UpcomingClass location="dashboard" type="physics" title="Vật lý 1" time="12:30" room="E-303" />
                 </Col>
                 <Col span={12}>
                     <Title level={4} style={{ marginBottom: '30px', fontSize: '22px' }}>Sắp đến hạn</Title>

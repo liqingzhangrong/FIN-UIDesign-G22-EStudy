@@ -1,0 +1,279 @@
+.container {
+  padding: 50px 50px;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+.classwork-title {
+  font-style: medium;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+.classwork-description {
+  font-style: light;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 10px;
+  color: #000000;
+}
+
+.semi-title {
+  margin-top: 35px;
+}
+
+.title-semi {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+.tag-box {
+  margin-top: 15px;
+}
+
+.tag {
+  height: 40px;
+  min-width: 70px;
+  border-radius: 20px;
+  border: 0;
+}
+
+.tag-classwork {
+  height: 40px;
+  min-width: 189px;
+  background: #f6f6f6;
+  border-radius: 20px;
+  border: 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.tag-classwork .text {
+  width: 100%;
+  height: 100%;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #000000;
+}
+
+.tag .text {
+  width: 100%;
+  height: 100%;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #000000;
+}
+
+.card {
+  width: 280px;
+  height: 280px;
+
+  border-radius: 20px;
+}
+
+.card .title {
+  margin-top: 15px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
+
+.card .text {
+  margin-top: 15px;
+
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+.image-Class {
+  height: 64px;
+  width: 65.62px;
+}
+
+.image-File {
+  height: 64px;
+  width: 64px;
+}
+
+.image-Avt {
+  height: 60.18px;
+  width: 80px;
+}
+.image-Avt-comment {
+  height: 48.76px;
+  width: 50px;
+}
+
+.image-add-comment {
+  height: 52.14px;
+  width: 50px;
+}
+
+.image-Test {
+  margin-top: 10px;
+  height: 56px;
+  width: 56px;
+}
+
+.image-Line {
+  margin-top: 10px;
+}
+
+.card-Class {
+  width: 100px;
+  height: 100px;
+  background: #e3f7ff;
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.card-Comment {
+  position: absolute;
+  display: flex;
+  background: #f6f6f6;
+  border-radius: 20px;
+  border: none;
+}
+
+.card-1 .progress-box {
+  margin-top: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-center-title {
+}
+
+.col-center-work {
+}
+
+.col-left {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.col-comment-left {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.col-comment-right {
+}
+
+.row-center {
+  margin-top: 45px;
+}
+
+.user-name {
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.36px;
+  color: #000000;
+}
+
+.user-name-comment {
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.36px;
+  color: #000000;
+}
+
+.classwork-upload-date {
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19.36px;
+  color: #000000;
+}
+
+.file-name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.file-col {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-right: 15px;
+  margin-top: 20px;
+}
+
+.add-comment-input {
+  height: 42px;
+  border-radius: 20px;
+}
+
+.submit-comment-button {
+  background: #dff2fc;
+  border-radius: 20px;
+  height: 42px;
+  width: 54px;
+  border: none;
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Row, Col, Typography, Input, Form, Checkbox, Button, Image, Tag, Card, Progress, Space } from "antd";
 import './index.css';
+import { history } from '../../history'
 
 import UpcomingClass from '../../components/upcoming-class/index';
 import UpcomingTaskLarge from '../../components/upcoming-task-large/index'
