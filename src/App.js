@@ -13,8 +13,9 @@ function App()
     <>
       <Switch>
         <Route exact path='/login' component={Login} />
-        <Route path='/' component={TheLayout} />
         <Redirect exact from='/' to="/login" />
+        <Route path='/' component={TheLayout} />
+        
       </Switch>
     </>
   )
