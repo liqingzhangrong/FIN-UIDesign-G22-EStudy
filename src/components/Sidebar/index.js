@@ -12,6 +12,7 @@ import
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { history } from '../../history'
+import Scrollbars from 'react-custom-scrollbars';
 
 const { Sider } = Layout;
 
@@ -61,10 +62,11 @@ function Sidebar(props)
   }
 
   return (
-    <div style={{ minHeight: '100vh' }}>
+    <div style={{ minHeight: '100vh', padding: '0 0 10% 0' }}>
       <Sider className="sidebar" collapsible collapsed={collapsed} theme="light" width="15vw" onCollapse={onCollapse} style={{ minHeight: '100vh' }}>
+       
         <Menu inlineIndent={24} onOpenChange={onOpenKeysChanged} className='sidebar-menu' theme="light" openKeys={openKeys} defaultOpenKeys={openKeys} defaultSelectedKeys={['1']} mode="inline">
-          <Link to='/'>
+          <Link to='/dashboard'>
             <img id="sidebar-logo" style={{ display: 'block', margin: 'auto', marginBottom: "32px", marginTop: '20px', transitionDuration: '200ms' }} src="/logo.svg" alt="logo" />
           </Link>
           <Menu.SubMenu key="sub1" title="Công việc" icon={collapsed ? <HomeOutlined className="sidebar-icons" style={{ marginRight: "30px", fontSize: '16px' }} /> : ""}>

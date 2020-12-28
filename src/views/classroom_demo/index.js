@@ -23,7 +23,7 @@ const ClassroomDemo = () =>
         setModalOpen(!modalOpen);
     }
     return (
-        <Scrollbars autoHide autoHideTimeout={0}>
+        
             <Col className="container" style={{ marginTop: '0px', position: 'relative' }}>
                 <Modal style={{ borderRadius: '20px' }} footer={[]} centered visible={modalOpen} onCancel={toggleModal} onOk={() => { setPostAdded(true); toggleModal() }}>
                     <Row style={{ marginTop: '15px' }} justify='center' align="middle">
@@ -125,7 +125,6 @@ const ClassroomDemo = () =>
                 </Col>
 
             </Col>
-        </Scrollbars>
 
     )
 }

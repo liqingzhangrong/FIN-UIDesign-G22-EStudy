@@ -1,6 +1,7 @@
 import { Layout } from "antd";
 import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
+import { Scrollbars } from 'react-custom-scrollbars';
 import Sidebar from "../components/Sidebar/index";
 import RightSidebar from "../components/right-side-bar/index";
 import Dashboard from "../views/dashboard/index";
@@ -22,10 +23,12 @@ function TheLayout() {
           <Content>
             <Switch>
               {/* <Redirect exact from="/" to="/login" /> */}
-              <Route path="/courses/web/classwork" component={TurnIn} />
-              <Route exact path="/courses" component={Course} />
-              <Route exact path="/dashboard" component={Dashboard} />
-              <Route exact path="/courses/web" component={ClassroomDemo} />
+              <Scrollbars autoHide autoHideTimeout={0} >
+                <Route path="/courses/web/classwork" component={TurnIn} />
+                <Route exact path="/courses" component={Course} />
+                <Route exact path="/dashboard" component={Dashboard} />
+                <Route exact path="/courses/web" component={ClassroomDemo} />
+              </Scrollbars>
             </Switch>
           </Content>
         </Layout>
