@@ -1,7 +1,6 @@
 import { HomeFilled, PlusOutlined, SearchOutlined } from '@ant-design/icons';
 import { Avatar, Breadcrumb, Button, Col, Image, Input, Modal, Row, Typography, Tabs } from "antd";
 import React, { useState } from "react";
-import { Scrollbars } from 'react-custom-scrollbars';
 import Post from '../../components/Post/index';
 import "./index.css";
 const { TabPane } = Tabs;
@@ -83,17 +82,17 @@ const ClassroomDemo = () =>
                 </Breadcrumb>
 
                 <Col className="semi-title">
-                    <Row justify="space-between" align="middle">
+                    <Row style={{ }} justify="space-between" align="middle">
                         <Col>
-                            <Typography className="title-semi">Bài viết</Typography>
+                            <Typography className="title-semi">Đã đăng ký</Typography>
                         </Col>
-                        <Col>
-                            <Row justify="space-between" style={{ marginTop: '30px' }} gutter={15} align="middle">
-                                <Col span={18}>
-                                    <Input style={{ borderRadius: '20px', marginRight: '15px', height: '42px' }} prefix={<SearchOutlined style={{ marginRight: '10px' }} />} placeholder='Tìm kiếm' />
+                        <Col span={12}>
+                            <Row justify="center" gutter={15} align="middle">
+                                <Col span={16}>
+                                    <Input style={{ borderRadius: '20px', height: '42px' }} prefix={<SearchOutlined style={{ marginRight: '10px' }} />} placeholder='Tìm kiếm' />
                                 </Col>
-                                <Col span={6}>
-                                    <Button style={{ background: '#f6f6f6', borderRadius: '20px', border: 'none' }}>Tên tăng dần</Button>
+                                <Col span={8}>
+                                    <Button style={{width:'100%', background: '#f6f6f6', borderRadius: '20px', border: 'none' }}>Tên tăng dần</Button>
                                 </Col>
                             </Row>
                         </Col>

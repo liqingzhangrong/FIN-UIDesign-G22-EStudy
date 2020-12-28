@@ -8,7 +8,7 @@ import './index.css';
 const DashboardRightSideBar = () =>
 {
     return (
-        <Col style={{ padding: '30px 50px 90px 50px' }}>
+        <Col style={{ padding: '30px 50px 120px 50px' }}>
             <Typography className="side-title">Lịch biểu</Typography>
             <Col className="side-card-box">
                 <Calendar fullscreen={false} headerRender={() => { return (<></>) }} />

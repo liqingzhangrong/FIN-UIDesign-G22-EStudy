@@ -10,7 +10,7 @@ import UpcomingTaskSmall from '../../components/upcoming-task-small/index'
 const CourseRightSideBar = () =>
 {
     return (
-        <Col className="side-container" style={{ padding: '30px 50px 90px 50px' }}>
+        <Col className="side-container" style={{ padding: '30px 50px 120px 50px' }}>
             <Typography className="side-title">Sắp diễn ra</Typography>
             <Col className="side-card-box">
                 <UpcomingClass type="web" title="Phát triển Web" time="12:30" room="E-303" />

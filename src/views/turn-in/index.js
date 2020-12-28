@@ -72,7 +72,7 @@ const TurnIn = () =>
                         </Col>
                         <Col className="col-comment-right" flex="auto">
                             <Card className="card-Comment" >
-                                <Typography className="classwork-comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</Typography>
+                                <Typography.Paragraph style={{fontSize:'16px', fontWeight:'300'}} className="classwork-comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</Typography.Paragraph>
                             </Card>
                         </Col>
                     </Row>
@@ -84,7 +84,7 @@ const TurnIn = () =>
                         </Col>
                         <Col className="col-comment-right" flex="auto">
                             <Card className="card-Comment" >
-                                <Typography className="classwork-comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</Typography>
+                                <Typography.Paragraph style={{fontSize:'16px', fontWeight:'300'}} className="classwork-comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</Typography.Paragraph>
                             </Card>
                         </Col>
                     </Row>

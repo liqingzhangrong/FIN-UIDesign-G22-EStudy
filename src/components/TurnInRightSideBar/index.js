@@ -65,7 +65,7 @@ const TurnInRightSideBar = () =>
     };
 
     return (
-        <Col style={{ padding: '30px 50px 90px 50px' }}>
+        <Col style={{ padding: '30px 50px 120px 50px' }}>
             <Row style={{ marginBottom: '30px' }}>
                 <Col span={8}>
                     <Typography className="side-title">Nộp bài</Typography>

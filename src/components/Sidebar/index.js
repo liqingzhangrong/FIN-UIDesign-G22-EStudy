@@ -62,9 +62,8 @@ function Sidebar(props)
   }
 
   return (
-    <div style={{ minHeight: '100vh', padding: '0 0 10% 0' }}>
+    <Scrollbars autoHide autoHideTimeout={0} autoHeightMin="100vh" autoHeightMax="100vh" style={{ minHeight: '100vh', padding: '0 0 10% 0', width:"15vw" }}>
       <Sider className="sidebar" collapsible collapsed={collapsed} theme="light" width="15vw" onCollapse={onCollapse} style={{ minHeight: '100vh' }}>
-       
         <Menu inlineIndent={24} onOpenChange={onOpenKeysChanged} className='sidebar-menu' theme="light" openKeys={openKeys} defaultOpenKeys={openKeys} defaultSelectedKeys={['1']} mode="inline">
           <Link to='/dashboard'>
             <img id="sidebar-logo" style={{ display: 'block', margin: 'auto', marginBottom: "32px", marginTop: '20px', transitionDuration: '200ms' }} src="/logo.svg" alt="logo" />
@@ -101,7 +100,7 @@ function Sidebar(props)
           <Typography.Paragraph style={{ marginTop: '15px' }}>Nội dung đã hoàn thành</Typography.Paragraph>
         </div>
       </Sider>
-    </div>
+    </Scrollbars>
   );
 }
 

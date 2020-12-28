@@ -23,7 +23,7 @@ function TheLayout() {
           <Content>
             <Switch>
               {/* <Redirect exact from="/" to="/login" /> */}
-              <Scrollbars autoHide autoHideTimeout={0} >
+              <Scrollbars autoHide autoHideTimeout={0} autoHeight autoHeightMin="100vh" autoHeightMax="100vh" >
                 <Route path="/courses/web/classwork" component={TurnIn} />
                 <Route exact path="/courses" component={Course} />
                 <Route exact path="/dashboard" component={Dashboard} />

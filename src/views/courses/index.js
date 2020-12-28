@@ -48,17 +48,17 @@ const Courses = () =>
                 </Row>
             </Col>
             <Col className="semi-title">
-                <Row style={{ width: '100%' }} justify="space-between" align="middle">
+                <Row style={{ }} justify="space-between" align="middle">
                     <Col>
                         <Typography className="title-semi">Đã đăng ký</Typography>
                     </Col>
-                    <Col>
-                        <Row justify="space-between" gutter={15} align="middle">
-                            <Col span={18}>
-                                <Input style={{ borderRadius: '20px', marginRight: '15px', height: '42px' }} prefix={<SearchOutlined style={{ marginRight: '10px' }} />} placeholder='Tìm kiếm' />
+                    <Col span={12}>
+                        <Row justify="center" gutter={15} align="middle">
+                            <Col span={16}>
+                                <Input style={{ borderRadius: '20px', height: '42px' }} prefix={<SearchOutlined style={{ marginRight: '10px' }} />} placeholder='Tìm kiếm' />
                             </Col>
-                            <Col span={6}>
-                                <Button style={{ background: '#f6f6f6', borderRadius: '20px', border: 'none' }}>Tên tăng dần</Button>
+                            <Col span={8}>
+                                <Button style={{width:'100%', background: '#f6f6f6', borderRadius: '20px', border: 'none' }}>Tên tăng dần</Button>
                             </Col>
                         </Row>
                     </Col>

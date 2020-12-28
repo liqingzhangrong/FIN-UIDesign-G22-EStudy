@@ -9,19 +9,19 @@ const { Title, Paragraph } = Typography;
 const ClassroomDemoRightSidebar = () =>
 {
     return (
-        <Col className="side-container" style={{ padding: '30px 50px 90px 50px' }}>
+        <Col className="side-container" style={{ padding: '30px 50px 120px 50px' }}>
             <Typography className="side-title">Công việc</Typography>
-            <Row justify="space-between" style={{ marginTop: '30px' }} gutter={15} align="middle">
-                <Col span={18}>
-                    <Input style={{ borderRadius: '20px', marginRight: '15px', height: '42px' }} prefix={<SearchOutlined style={{ marginRight: '10px' }} />} placeholder='Tìm kiếm' />
-                </Col>
-                <Col span={6}>
-                    <Button style={{ background: '#f6f6f6', borderRadius: '20px', border: 'none' }}>Tên tăng dần</Button>
-                </Col>
-            </Row>
+                <Row style={{marginTop:'30px'}} justify="space-between" align="middle" gutter={15}>
+                    <Col span={16}>
+                        <Input style={{ borderRadius: '20px', height: '42px' }} prefix={<SearchOutlined style={{ marginRight: '10px' }} />} placeholder='Tìm kiếm' />
+                    </Col>
+                    <Col span={8}>
+                        <Button style={{width:'100%', background: '#f6f6f6', borderRadius: '20px', border: 'none' }}>Tên tăng dần</Button>
+                    </Col>
+                </Row>
             <Row gutter={16} justify="center" style={{ marginTop: '30px' }}>
-                <Col span={24}>
-                    <Tabs size="large" tabBarGutter={45} defaultActiveKey="1" centered>
+               
+                    <Tabs style={{width:'100%'}} centered size="large" tabBarGutter={45} defaultActiveKey="1" centered>
                         <Tabs.TabPane tab="Tất cả" key="1">
                             <Col style={{ marginTop: '15px' }}>
                                 <Typography.Title style={{ fontSize: '16px', fontWeight: '300', marginBottom: '15px' }} >Sắp đến hạn</Typography.Title>
@@ -140,7 +140,7 @@ const ClassroomDemoRightSidebar = () =>
                             </Col>
                         </Tabs.TabPane>
                     </Tabs>
-                </Col>
+              
             </Row>
         </Col >
     )
